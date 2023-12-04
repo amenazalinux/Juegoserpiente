@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -170px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 2px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    height: 30px;
+    position: relative;
+}
+
+.player {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00f;
+}
+
+.path {
+    background-color: #aaf;
+}
+
+.trap {
+    background-color: #f00;
+}
+
+.trap-buttons {
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 10;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.trap-buttons button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+}
+
+#rollDice {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#diceResult {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Otros estilos que puedas tener... */
