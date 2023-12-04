@@ -20,10 +20,10 @@ function createBoard() {
             const trapButtons = document.createElement('div');
             trapButtons.className = 'trap-buttons';
             const noPenaltyButton = document.createElement('button');
-            noPenaltyButton.textContent = 'No Castigo';
+            noPenaltyButton.textContent = 'Verdad';
             noPenaltyButton.addEventListener('click', () => handleTrapDecision(i + 1, false));
             const penaltyButton = document.createElement('button');
-            penaltyButton.textContent = 'Castigo';
+            penaltyButton.textContent = 'Reto';
             penaltyButton.addEventListener('click', () => handleTrapDecision(i + 1, true));
             trapButtons.appendChild(noPenaltyButton);
             trapButtons.appendChild(penaltyButton);
